@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface CountriesApi {
 
-    @GET("all")
+    @GET("xdk5-pm3f.json")
     fun getCountries(): Single<List<Country>>
 }
