@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_mvc.xml" value="0.35260416666666666" />
         <entry key="app/src/main/res/layout/activity_mvp.xml" value="0.35507246376811596" />
+        <entry key="app/src/main/res/layout/activity_mvvm.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/row_layout.xml" value="0.35260416666666666" />
       </map>
     </option>
