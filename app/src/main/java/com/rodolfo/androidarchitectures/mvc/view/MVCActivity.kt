@@ -9,14 +9,12 @@ import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import com.google.android.material.snackbar.Snackbar
 import com.rodolfo.androidarchitectures.databinding.ActivityMvcBinding
-import com.rodolfo.androidarchitectures.databinding.RowLayoutBinding
 import com.rodolfo.androidarchitectures.mvc.adapter.CountryAdapter
 import com.rodolfo.androidarchitectures.mvc.controller.CountriesController
 
 class MVCActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMvcBinding
-    private lateinit var bindingRow: RowLayoutBinding
 
     private var adapter: CountryAdapter = CountryAdapter()
     private val controller = CountriesController(this)
@@ -25,7 +23,6 @@ class MVCActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMvcBinding.inflate(layoutInflater)
-        bindingRow = RowLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
         title = "MVC Activity"
 
@@ -55,7 +52,7 @@ class MVCActivity : AppCompatActivity() {
         Snackbar.make(binding.root, message ?: "Algo salío mal", Snackbar.LENGTH_LONG).show()
         binding.list.isGone = true
         binding.retryButton.isVisible = true
-        binding.progress.isVisible = true
+        binding.progress.isGone = true
     }
 
     companion object {
