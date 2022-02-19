@@ -52,4 +52,7 @@ dependencies {
     //Rx
     implementation "io.reactivex.rxjava2:rxandroid:$rxVersion"
     implementation "io.reactivex.rxjava2:rxjava:$rxVersion"
+
+    // lifecycle
+    implementation "android.arch.lifecycle:extensions:$lifecycleExtensionsVersion"
 }

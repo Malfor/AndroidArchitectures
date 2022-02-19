@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidArchitectures">
         <activity
-            android:name=".mvvm.MVVMActivity"
+            android:name=".mvvm.view.MVVMActivity"
             android:exported="true" />
         <activity
             android:name=".mvp.view.MVPActivity"
